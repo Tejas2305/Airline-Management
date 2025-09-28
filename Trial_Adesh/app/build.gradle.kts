@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.galaxyairline.android"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.galaxyairline.android"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -35,8 +35,8 @@ android {
     }
     
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_20
-        targetCompatibility = JavaVersion.VERSION_20
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
 

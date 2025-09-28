@@ -41,6 +41,11 @@ public class LandingActivity extends AppCompatActivity {
             // Scroll to features section or show more info
             binding.scrollView.smoothScrollTo(0, binding.featuresSection.getTop());
         });
+        
+        binding.btnBookNow.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        });
     }
     
     private void navigateToDashboard() {

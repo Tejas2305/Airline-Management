@@ -16,6 +16,8 @@
         android:theme="@style/Theme.GalaxyAirlines"
         android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config">
+        
+        <!-- Main Activity (Splash Screen) -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -25,6 +27,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!-- Landing Activity -->
+        <activity
+            android:name=".ui.LandingActivity"
+            android:theme="@style/Theme.GalaxyAirlines.NoActionBar" />
+            
+        <!-- Login Activity -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:theme="@style/Theme.GalaxyAirlines.NoActionBar" />
+            
+        <!-- User Dashboard Activity -->
+        <activity
+            android:name=".ui.UserDashboardActivity"
+            android:theme="@style/Theme.GalaxyAirlines.NoActionBar" />
+            
+        <!-- Admin Dashboard Activity -->
+        <activity
+            android:name=".ui.AdminDashboardActivity"
+            android:theme="@style/Theme.GalaxyAirlines.NoActionBar" />
+            
+        <!-- Flight Search Activity -->
+        <activity
+            android:name=".ui.FlightSearchActivity"
+            android:theme="@style/Theme.GalaxyAirlines.NoActionBar" />
+            
+        <!-- Flight Results Activity -->
+        <activity
+            android:name=".ui.FlightResultsActivity"
+            android:theme="@style/Theme.GalaxyAirlines.NoActionBar" />
+            
     </application>
 
 </manifest>
