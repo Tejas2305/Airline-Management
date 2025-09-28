@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:text="←"
+            android:textSize="18sp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Search Flights"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+
+    <!-- Search Form -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- From/Origin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_origin"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Enter origin city"
+                android:background="@drawable/edit_text_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="text" />
+
+            <!-- To/Destination -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_destination"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Enter destination city"
+                android:background="@drawable/edit_text_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="text" />
+
+            <!-- Departure Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure Date"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_depart_date"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Select departure date"
+                android:background="@drawable/edit_text_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <!-- Return Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return Date (Optional)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_return_date"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Select return date"
+                android:background="@drawable/edit_text_background"
+                android:padding="16dp"
+                android:layout_marginBottom="32dp"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <!-- Search Button -->
+            <Button
+                android:id="@+id/btn_search_flights"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Search Flights"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="#007bff"
+                android:backgroundTint="#007bff"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

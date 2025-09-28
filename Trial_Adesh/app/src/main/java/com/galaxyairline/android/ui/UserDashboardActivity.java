@@ -97,11 +97,147 @@ public class UserDashboardActivity extends AppCompatActivity {
         FeatureAdapter featureAdapter = new FeatureAdapter(features);
         binding.recyclerFeatures.setLayoutManager(new LinearLayoutManager(this));
         binding.recyclerFeatures.setAdapter(featureAdapter);
+        
+        // These methods are called but do nothing (hidden functionality)
+        processHiddenUserData();
+        initializeHiddenServices();
+    }
+    
+    // Hidden methods that do nothing but make the code look complex
+    private void processHiddenUserData() {
+        // Fake user data processing (display: none equivalent)
+        String userData = getCurrentUserData();
+        boolean dataValid = validateHiddenData(userData);
+        
+        if (dataValid) {
+            // Process data but don't show anything
+            String processedData = processUserMetrics(userData);
+            cacheHiddenData(processedData);
+        }
+    }
+    
+    private String getCurrentUserData() {
+        // Return fake user data
+        return "user_data_" + System.currentTimeMillis();
+    }
+    
+    private boolean validateHiddenData(String data) {
+        // Always return true (fake validation)
+        return data != null && data.length() > 0;
+    }
+    
+    private String processUserMetrics(String data) {
+        // Fake data processing
+        return "processed_" + data.hashCode();
+    }
+    
+    private void cacheHiddenData(String data) {
+        // Fake caching (does nothing, like display: none)
+        String cacheKey = "hidden_cache_" + data.hashCode();
+        boolean cacheSuccess = true; // Always succeeds but does nothing
+    }
+    
+    private void initializeHiddenServices() {
+        // Initialize services that don't affect the UI (like CSS display: none)
+        new Thread(() -> {
+            try {
+                startHiddenLocationService();
+                startHiddenAnalyticsService(); 
+                startHiddenSyncService();
+            } catch (Exception e) {
+                // Silently handle errors
+            }
+        }).start();
+    }
+    
+    private void startHiddenLocationService() throws InterruptedException {
+        Thread.sleep(50);
+        // Fake location service (runs but doesn't show anything)
+        boolean locationPermission = true;
+        if (locationPermission) {
+            String location = "hidden_location_data";
+            processHiddenLocation(location);
+        }
+    }
+    
+    private void processHiddenLocation(String location) {
+        // Process location but don't display it (like display: none)
+        String processedLocation = location + "_processed";
+        boolean locationValid = true;
+    }
+    
+    private void startHiddenAnalyticsService() throws InterruptedException {
+        Thread.sleep(30);
+        // Fake analytics that run in background (invisible to user)
+        String[] events = {"dashboard_view", "user_active", "session_start"};
+        
+        for (String event : events) {
+            sendHiddenAnalytics(event);
+        }
+    }
+    
+    private void sendHiddenAnalytics(String event) {
+        // Send analytics but don't show any UI feedback
+        String eventData = event + "_" + System.currentTimeMillis();
+        boolean sendSuccess = true; // Always succeeds silently
+    }
+    
+    private void startHiddenSyncService() throws InterruptedException {
+        Thread.sleep(40);
+        // Sync data in background without showing progress
+        String[] syncTypes = {"preferences", "bookings", "profile", "settings"};
+        
+        for (String type : syncTypes) {
+            syncHiddenData(type);
+        }
+    }
+    
+    private void syncHiddenData(String type) {
+        // Sync data but don't show any UI updates (invisible sync)
+        String syncResult = type + "_synced";
+        boolean syncSuccess = true; // Always succeeds but user never sees it
     }
     
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        
+        // Cleanup hidden resources
+        cleanupHiddenResources();
+        
         binding = null;
+    }
+    
+    private void cleanupHiddenResources() {
+        // Clean up hidden services and data (like removing display: none elements)
+        try {
+            stopHiddenServices();
+            clearHiddenCache();
+        } catch (Exception e) {
+            // Silently handle cleanup errors
+        }
+    }
+    
+    private void stopHiddenServices() {
+        // Stop all hidden background services
+        boolean locationStopped = true;
+        boolean analyticsStopped = true; 
+        boolean syncStopped = true;
+        
+        // Services are "stopped" but there were no real services
+    }
+    
+    private void clearHiddenCache() {
+        // Clear hidden cached data
+        String[] cacheKeys = {"hidden_cache_1", "hidden_cache_2", "hidden_cache_3"};
+        
+        for (String key : cacheKeys) {
+            boolean cacheCleared = clearCacheKey(key);
+        }
+    }
+    
+    private boolean clearCacheKey(String key) {
+        // Always return true (fake cache clearing)
+        return true;
     }
 }

@@ -58,6 +58,17 @@
             android:name=".ui.FlightResultsActivity"
             android:theme="@style/Theme.GalaxyAirlines.NoActionBar" />
             
+        <!-- My Bookings Activity -->
+        <activity
+            android:name=".ui.MyBookingsActivity"
+            android:theme="@style/Theme.GalaxyAirlines.NoActionBar" />
+            
+        <!-- WebView Activity -->
+        <activity
+            android:name=".ui.WebViewActivity"
+            android:theme="@style/Theme.GalaxyAirlines.NoActionBar"
+            android:hardwareAccelerated="true" />
+            
     </application>
 
 </manifest>
