@@ -2,4 +2,26 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Galaxy Airlines Brand Colors -->
+    <color name="primary_red">#DC2626</color>
+    <color name="primary_red_dark">#B91C1C</color>
+    <color name="primary_red_light">#FEE2E2</color>
+    
+    <!-- Background Colors -->
+    <color name="background_gray">#F9FAFB</color>
+    <color name="surface_white">#FFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_tertiary">#9CA3AF</color>
+    
+    <!-- Success and Error Colors -->
+    <color name="success_green">#10B981</color>
+    <color name="error_red">#EF4444</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent_blue">#3B82F6</color>
+    <color name="accent_yellow">#F59E0B</color>
 </resources>
